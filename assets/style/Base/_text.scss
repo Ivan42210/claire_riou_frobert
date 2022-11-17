@@ -1,0 +1,18 @@
+/*Texts*/
+
+.text {
+    @include text-color;
+    @include text-align;
+}
+
+.f {
+    @include font-size;
+}
+
+.special-font {
+    font-family: 'Parisienne', cursive;
+}
+
+.fw {
+    @include font-weight;
+}

@@ -1,0 +1,197 @@
+@mixin bg {
+    @each $clr,
+    $color in $colors {
+        &-#{$clr} {
+            background: map-get($colors, $clr);
+        }
+    }
+    @each $clrl,
+    $colorLight in $colorLights {
+        &-#{$clrl} {
+            background: map-get($colorLights, $clrl);
+        }
+    }
+}
+
+@mixin text-color {
+    @each $clr,
+    $color in $colors {
+        &-#{$clr} {
+            color: map-get($colors, $clr);
+        }
+    }
+    @each $clrl,
+    $colorLight in $colorLights {
+        &-#{$clrl} {
+            color: map-get($colorLights, $clrl);
+        }
+    }
+}
+
+@mixin text-align {
+    @each $algnt,
+    $text-alignement in $text-alignements {
+        &-#{$algnt} {
+            text-align: map-get($text-alignements, $algnt);
+        }
+    }
+}
+
+@mixin margin {
+    @each $mp,
+    $marginPadding in $marginPaddings {
+        &x-#{$mp} {
+            margin-left: map-get($marginPaddings, $mp);
+            margin-right: map-get($marginPaddings, $mp);
+        }
+        &y-#{$mp} {
+            margin-top: map-get($marginPaddings, $mp);
+            margin-bottom: map-get($marginPaddings, $mp);
+        }
+        &t-#{$mp} {
+            margin-top: map-get($marginPaddings, $mp);
+        }
+        &r-#{$mp} {
+            margin-right: map-get($marginPaddings, $mp);
+        }
+        &b-#{$mp} {
+            margin-bottom: map-get($marginPaddings, $mp);
+        }
+        &l-#{$mp} {
+            margin-left: map-get($marginPaddings, $mp);
+        }
+    }
+}
+
+@mixin padding {
+    @each $mp,
+    $marginPadding in $marginPaddings {
+        &x-#{$mp} {
+            padding-left: map-get($marginPaddings, $mp);
+            padding-right: map-get($marginPaddings, $mp);
+        }
+        &y-#{$mp} {
+            padding-top: map-get($marginPaddings, $mp);
+            padding-bottom: map-get($marginPaddings, $mp);
+        }
+        &t-#{$mp} {
+            padding-top: map-get($marginPaddings, $mp);
+        }
+        &r-#{$mp} {
+            padding-right: map-get($marginPaddings, $mp);
+        }
+        &b-#{$mp} {
+            padding-bottom: map-get($marginPaddings, $mp);
+        }
+        &l-#{$mp} {
+            padding-left: map-get($marginPaddings, $mp);
+        }
+    }
+}
+
+@mixin buttons {
+    @each $clr,
+    $color in $colors {
+        &-outlined-#{$clr} {
+            background: transparent;
+            border: solid 2px map-get($colors, $clr);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            color: map-get($colors, $clr);
+            transition: all .5s ease-in;
+            &:hover {
+                background-color: map-get($colors, $clr);
+                color: $light;
+                box-shadow: 0 0 0 5px lighten(map-get($colors, $clr), 10%);
+            }
+        }
+        &-pill-#{$clr} {
+            background: map-get($colors, $clr);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            transition: all .5s ease-in;
+            color: $light;
+            &:hover {
+                background: $light;
+                color: map-get($colors, $clr);
+                box-shadow: 0 0 0 5px lighten(map-get($colors, $clr), 10%);
+            }
+        }
+    }
+    @each $clrl,
+    $colorLight in $colorLights {
+        &-outlined-#{$clrl} {
+            background: transparent;
+            border: solid 2px map-get($colorLights, $clrl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            color: map-get($colorLights, $clrl);
+            transition: all .5s ease-in;
+            &:hover {
+                background-color: map-get($colorLights, $clrl);
+                color: $dark;
+                box-shadow: 0 0 0 5px darken(map-get($colorLights, $clrl), 10%);
+            }
+        }
+        &-pill-#{$clrl} {
+            background: map-get($colorLights, $clrl);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            transition: all .5s ease-in;
+            color: $dark;
+            &:hover {
+                background: $dark;
+                color: map-get($colorLights, $clrl);
+                box-shadow: 0 0 0 5px map-get($colorLights, $clrl);
+            }
+        }
+    }
+}
+
+@mixin font-weight {
+    @each $fw,
+    $f-weight in $f-weights {
+        &-#{$fw} {
+            font-weight: map-get($f-weights, $fw);
+        }
+    }
+}
+
+@mixin smartphone {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 701px) and (max-width: 1050px) {
+        @content;
+    }
+}
+
+@mixin font-size {
+    @each $sz,
+    $f-size in $f-sizes {
+        &-#{$sz} {
+            font-size: map-get($f-sizes, $sz);
+        }
+    }
+}

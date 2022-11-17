@@ -1,0 +1,120 @@
+    /*navbar*/
+    
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        @include smartphone {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__header {
+            display: flex;
+            width: 60%;
+            align-items: center;
+            @include smartphone {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+        &__logo {
+            height: 90px;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        transition: all .5s ease-in-out;
+        @include tablet {
+            display: none;
+        }
+        @include smartphone {
+            display: none;
+        }
+        &--active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            animation: appears .5s '' .2s;
+        }
+        &__section {
+            width: 40%;
+            @include smartphone {
+                width: 100%;
+            }
+        }
+        &__toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 35px;
+            background: transparent;
+            border: 2px solid $primary;
+            margin-right: map-get($marginPaddings, 1);
+            border-radius: 5px;
+            position: relative;
+            @include tablet {
+                display: flex;
+            }
+            @include smartphone {
+                display: flex;
+            }
+            span {
+                position: absolute;
+                height: 2px;
+                width: 25px;
+                border-radius: 2px;
+                background: $primary;
+                transition: all .5s ease-in-out;
+                &:nth-child(1) {
+                    top: 7px;
+                }
+                &:nth-child(2) {
+                    bottom: 7px;
+                }
+            }
+            &--active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 35px;
+                width: 35px;
+                background: transparent;
+                border: 2px solid $primary;
+                margin-right: map-get($marginPaddings, 1);
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+                span {
+                    position: absolute;
+                    height: 2px;
+                    width: 25px;
+                    border-radius: 2px;
+                    background: $primary;
+                    transition: all .5s ease-in-out;
+                    &:nth-child(3) {
+                        transform: translate(200%);
+                    }
+                    &:nth-child(1) {
+                        transform: rotate(43deg);
+                    }
+                    &:nth-child(2) {
+                        transform: rotate(317deg);
+                    }
+                }
+            }
+        }
+    }
+    
+    @keyframes appears {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }

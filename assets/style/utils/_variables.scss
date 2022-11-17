@@ -1,0 +1,23 @@
+/*
+    first color scheme*/
+
+$primary: #42B3AE;
+$secondary: #E4717A;
+$tertiary: #FFFFCC;
+$light: whitesmoke;
+$warning: rgba(240, 160, 75, 1);
+$dark: #050203;
+
+/*$primary: #40E0D0;
+$secondary: #FFFD74;
+$tertiary: #9370DB;
+$warning: #ff7f50;
+$dark: #0C2C29;
+$light: #F8F8FF;*/
+
+$colors: ( warning: $warning, primary:$primary, secondary: $secondary, dark: $dark);
+$colorLights:(tertiary: $tertiary, light:$light);
+$marginPaddings: (1:10px, 2:15px, 3:20px, 4:25px, 5:30px, auto:auto);
+$f-sizes: (1: 28px, 2: 24px, 3: 20px, 4: 18px, 5: 15px, 6: 12px);
+$text-alignements: (center: center, left: left, right: right, end: end, start: start);
+$f-weights: (1:100, 2:300, 3:500, 5:700, bold:bold);

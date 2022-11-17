@@ -1,0 +1,22 @@
+.footer {
+    &__first {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include smartphone {
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+        }
+        &__part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__text {
+                width: 70%;
+            }
+            &__list {
+                list-style: disc !important;
+            }
+        }
+    }
+}

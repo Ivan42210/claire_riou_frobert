@@ -1,0 +1,25 @@
+.coach {
+    &__introduction {
+        display: flex;
+        align-items: center;
+    }
+    &__article {
+        width: 70%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    &Header {
+        &__thumbnail {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: 50% 86%;
+            &__place {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+    }
+}
