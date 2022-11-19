@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     border: solid 2px $light;
+    transition: all .5s ease-in-out;
     &__section {
         width: 100%;
         display: grid;

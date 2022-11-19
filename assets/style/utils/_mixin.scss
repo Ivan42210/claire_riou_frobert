@@ -13,6 +13,27 @@
     }
 }
 
+@mixin bg-hover {
+    @each $clr,
+    $color in $colors {
+        &-#{$clr} {
+            background: map-get($colors, $clr);
+            &:hover {
+                background: darken(map-get($colors, $clr), 10%);
+            }
+        }
+    }
+    @each $clrl,
+    $colorLight in $colorLights {
+        &-#{$clrl} {
+            background: map-get($colorLights, $clrl);
+            &:hover {
+                background: darken(map-get($colorLights, $clrl), 10%);
+            }
+        }
+    }
+}
+
 @mixin text-color {
     @each $clr,
     $color in $colors {
