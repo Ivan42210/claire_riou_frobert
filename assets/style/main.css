@@ -27,7 +27,7 @@ $light: #F8F8FF;*/
 
 /*Global--backgrounds*/
 .bg-warning {
-  background: rgb(240, 160, 75);
+  background: #CF5B2E;
 }
 .bg-primary {
   background: #42B3AE;
@@ -46,10 +46,10 @@ $light: #F8F8FF;*/
 }
 
 .bg-hover-warning {
-  background: rgb(240, 160, 75);
+  background: #CF5B2E;
 }
 .bg-hover-warning:hover {
-  background: #ec871c;
+  background: #a54925;
 }
 .bg-hover-primary {
   background: #42B3AE;
@@ -332,7 +332,7 @@ $light: #F8F8FF;*/
 
 /*Texts*/
 .text-warning {
-  color: rgb(240, 160, 75);
+  color: #CF5B2E;
 }
 .text-primary {
   color: #42B3AE;
@@ -683,13 +683,11 @@ $light: #F8F8FF;*/
 @media (max-width: 700px) {
   .card__section {
     grid-template-columns: 1fr;
-    gap: 1em;
   }
 }
 @media (min-width: 701px) and (max-width: 1050px) {
   .card__section {
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
   }
 }
 .card__body {
@@ -889,7 +887,7 @@ $light: #F8F8FF;*/
 
 .btn-outlined-warning {
   background: transparent;
-  border: solid 2px rgb(240, 160, 75);
+  border: solid 2px #CF5B2E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,19 +900,19 @@ $light: #F8F8FF;*/
   height: 50px;
   width: 150px;
   border-radius: 50px;
-  color: rgb(240, 160, 75);
+  color: #CF5B2E;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 .btn-outlined-warning:hover {
-  background-color: rgb(240, 160, 75);
+  background-color: #CF5B2E;
   color: whitesmoke;
-  -webkit-box-shadow: 0 0 0 5px #f4b97a;
-          box-shadow: 0 0 0 5px #f4b97a;
+  -webkit-box-shadow: 0 0 0 5px #da7b56;
+          box-shadow: 0 0 0 5px #da7b56;
 }
 .btn-pill-warning {
-  background: rgb(240, 160, 75);
+  background: #CF5B2E;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,9 +933,9 @@ $light: #F8F8FF;*/
 }
 .btn-pill-warning:hover {
   background: whitesmoke;
-  color: rgb(240, 160, 75);
-  -webkit-box-shadow: 0 0 0 5px #f4b97a;
-          box-shadow: 0 0 0 5px #f4b97a;
+  color: #CF5B2E;
+  -webkit-box-shadow: 0 0 0 5px #da7b56;
+          box-shadow: 0 0 0 5px #da7b56;
 }
 .btn-outlined-primary {
   background: transparent;

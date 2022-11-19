@@ -12,11 +12,9 @@
         grid-auto-rows: auto;
         @include smartphone {
             grid-template-columns: 1fr;
-            gap: 1em;
         }
         @include tablet {
             grid-template-columns: 1fr 1fr;
-            gap: 1em;
         }
     }
     &__body {
