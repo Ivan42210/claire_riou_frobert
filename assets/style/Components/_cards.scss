@@ -5,6 +5,12 @@
     overflow: hidden;
     border: solid 2px $light;
     transition: all .5s ease-in-out;
+    @include smartphone {
+        width: 99%;
+    }
+    @include tablet {
+        width: 99%;
+    }
     &__section {
         width: 100%;
         display: grid;

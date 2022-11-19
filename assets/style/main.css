@@ -504,7 +504,7 @@ $light: #F8F8FF;*/
   height: 35px;
   width: 35px;
   background: transparent;
-  border: 2px solid #42B3AE;
+  border: 2px solid #CF5B2E;
   margin-right: 10px;
   border-radius: 5px;
   position: relative;
@@ -528,7 +528,7 @@ $light: #F8F8FF;*/
   height: 2px;
   width: 25px;
   border-radius: 2px;
-  background: #42B3AE;
+  background: #CF5B2E;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -552,7 +552,7 @@ $light: #F8F8FF;*/
   height: 35px;
   width: 35px;
   background: transparent;
-  border: 2px solid #42B3AE;
+  border: 2px solid #CF5B2E;
   margin-right: 10px;
   border-radius: 5px;
   position: relative;
@@ -563,7 +563,7 @@ $light: #F8F8FF;*/
   height: 2px;
   width: 25px;
   border-radius: 2px;
-  background: #42B3AE;
+  background: #CF5B2E;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -673,6 +673,16 @@ $light: #F8F8FF;*/
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 99%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1050px) {
+  .card {
+    width: 99%;
+  }
 }
 .card__section {
   width: 100%;
