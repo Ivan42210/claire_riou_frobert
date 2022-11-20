@@ -9,11 +9,19 @@
             flex-direction: column;
             justify-content: center;
         }
+        @include tablet {
+            flex-direction: column;
+            justify-content: center;
+        }
         &__header {
             display: flex;
             width: 60%;
             align-items: center;
             @include smartphone {
+                width: 100%;
+                justify-content: space-between;
+            }
+            @include tablet {
                 width: 100%;
                 justify-content: space-between;
             }
@@ -43,6 +51,9 @@
         &__section {
             width: 40%;
             @include smartphone {
+                width: 100%;
+            }
+            @include tablet {
                 width: 100%;
             }
         }

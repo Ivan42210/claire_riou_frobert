@@ -428,6 +428,17 @@ $light: #F8F8FF;*/
             justify-content: center;
   }
 }
+@media (min-width: 701px) and (max-width: 1050px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .navbar__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +449,14 @@ $light: #F8F8FF;*/
           align-items: center;
 }
 @media (max-width: 700px) {
+  .navbar__header {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 701px) and (max-width: 1050px) {
   .navbar__header {
     width: 100%;
     -webkit-box-pack: justify;
@@ -489,6 +508,11 @@ $light: #F8F8FF;*/
   width: 40%;
 }
 @media (max-width: 700px) {
+  .menu__section {
+    width: 100%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1050px) {
   .menu__section {
     width: 100%;
   }
@@ -624,6 +648,19 @@ $light: #F8F8FF;*/
             align-items: center;
   }
 }
+@media (min-width: 701px) and (max-width: 1050px) {
+  .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .hero__img {
   width: 100%;
   height: 100%;
@@ -652,6 +689,18 @@ $light: #F8F8FF;*/
           justify-content: center;
 }
 @media (max-width: 700px) {
+  .hero__message {
+    width: 90%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 23%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1050px) {
   .hero__message {
     width: 90%;
     height: 50%;
@@ -779,6 +828,16 @@ $light: #F8F8FF;*/
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 700px) {
+  .about-author__title {
+    text-align: center;
+  }
+}
+@media (min-width: 701px) and (max-width: 1050px) {
+  .about-author__title {
+    text-align: center;
   }
 }
 
