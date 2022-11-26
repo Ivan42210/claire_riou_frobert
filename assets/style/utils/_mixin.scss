@@ -179,7 +179,7 @@
             transition: all .5s ease-in;
             color: $dark;
             &:hover {
-                background: $dark;
+                background: $primary;
                 color: map-get($colorLights, $clrl);
                 box-shadow: 0 0 0 5px map-get($colorLights, $clrl);
             }

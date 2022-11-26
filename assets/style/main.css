@@ -1221,7 +1221,7 @@ $light: #F8F8FF;*/
   color: #050203;
 }
 .btn-pill-tertiary:hover {
-  background: #050203;
+  background: #42B3AE;
   color: #FFFFCC;
   -webkit-box-shadow: 0 0 0 5px #FFFFCC;
           box-shadow: 0 0 0 5px #FFFFCC;
@@ -1273,7 +1273,7 @@ $light: #F8F8FF;*/
   color: #050203;
 }
 .btn-pill-light:hover {
-  background: #050203;
+  background: #42B3AE;
   color: whitesmoke;
   -webkit-box-shadow: 0 0 0 5px whitesmoke;
           box-shadow: 0 0 0 5px whitesmoke;
